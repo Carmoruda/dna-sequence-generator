@@ -9,7 +9,7 @@ def complementary_strand():
     complementary_nucleobases = {"A": "T", "T": "A", "C": "G", "G": "C"}
     adnc = ''.join([complementary_nucleobases[nucleobase] for nucleobase in dna_strand])
 
-    complementary_label = Label(root, text='Complementary DNA strand: ')
+    complementary_label = Label(root, text='Complementary sequence: ')
     complementary_label.configure(bg='#bcb8ce')
     complementary_label.grid(pady=10, padx=10, row=2, column=0)
 
@@ -24,7 +24,7 @@ root.title("Complementary strands")
 root.configure(bg='#bcb8ce')
 
 # Create Widgets
-original_label = Label(root, text='Enter the original DNA strand: ')
+original_label = Label(root, text='Input sequence: ')
 original_label.configure(bg='#bcb8ce')
 original_label.grid(pady=10, padx=10, row=0, column=0)
 
